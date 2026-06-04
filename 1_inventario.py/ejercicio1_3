@@ -1,0 +1,11 @@
+productos= {
+    "Mouse" : [10,15000],
+    "Teclado" : [5, 25000],
+    "Monitor" : [3, 180000]
+}
+
+def leer_opcion():
+    while True:
+        Try:
+        opcion=int(input("Ingresa el producto: "))
+
