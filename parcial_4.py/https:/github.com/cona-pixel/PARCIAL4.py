@@ -1,7 +1,5 @@
 
 usuarios = {}
-
-
 def validar_contrasena(contrasena):
     tiene_numero = False
     tiene_letra = False
@@ -22,7 +20,6 @@ def validar_contrasena(contrasena):
         return True
     else:
         return False
-
 
 def ingresar_usuario():
     while True:
@@ -57,15 +54,13 @@ def ingresar_usuario():
 
     print("Usuario ingresado con exito!!")
 
-
 def buscar_usuario():
-    nombre = input("Ingrese usuario a buscar: ")
+    nombre = input("Ingrese usuario a buscar: ").lower()
 
     if nombre in usuarios:
         print("El sexo del usuario es:", usuarios[nombre]["sexo"], "y la contraseña es:", usuarios[nombre]["contrasena"])
     else:
         print("El usuario no se encuentra.")
-
 
 def eliminar_usuario():
     nombre = input("Ingrese usuario a buscar: ")
@@ -76,14 +71,12 @@ def eliminar_usuario():
     else:
         print("No se pudo eliminar usuario!")
 
-
 def mostrar_menu():
     print("MENU PRINCIPAL")
     print("1.- Ingresar usuario.")
     print("2.- Buscar usuario.")
     print("3.- Eliminar usuario.")
     print("4.- Salir.")
-
 
 def main():
     while True:
