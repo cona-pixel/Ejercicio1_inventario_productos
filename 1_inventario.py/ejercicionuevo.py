@@ -1,9 +1,10 @@
 
-'''producto = {
+producto = {
     "Mouse":[10,15000],
     "Teclado" : [5,25000],
     "Monitor" : [3,180000]
-}'''
+}
+
 def agregar_producto(productos):
     nombre = input("Nombre del producto: ").strip()
 
